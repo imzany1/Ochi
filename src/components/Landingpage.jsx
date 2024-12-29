@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
+import Navlogo from "../assets/Navlogo.svg";
 
 function LandingPage() {
   return (
@@ -17,7 +18,7 @@ function LandingPage() {
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
                     className="w-[13vw] h-[4vh] top-[1vh] md:h-[6.5vh] lg:h-[5.4vw] z-0 relative flex justify-center items-center lg:top-3 md:top-[1.2vh] bg-green-500 text-white rounded-md"
                   >
-                    <img src=".src/assets/Navlogo.svg" alt="" className="md:size-16 lg:size-24 xl:size-32"/>
+                    <img src={Navlogo} alt="" className="md:size-16 lg:size-24 xl:size-32"/>
                   </motion.div>
                 )}
                 <h1 className="uppercase text-nowrap text-[12vw] leading-10 md:text-[9vw] md:leading-[8vw] md:tracking-tight lg:text-[7vw] lg:leading-[6.5vw] tracking-tighter font-bold">

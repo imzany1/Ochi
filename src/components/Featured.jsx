@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import FYDE from "../assets/Fyde_Illustration_Crypto_2-1326x1101.png";
+import VISE from "../assets/09ce62e5-4f11-4b65-b1f6-6e2714f1849d.jpg";
 
 function Featured() {
   const [hovering1, setHovering1] = useState(false);
@@ -43,7 +45,7 @@ function Featured() {
             <div className="card w-full h-full hover:scale-[98%] rounded-xl transition-all overflow-hidden">
               <img
                 className="w-full h-full bg-cover"
-                src="src\assets\Fyde_Illustration_Crypto_2-1326x1101.png"
+                src={FYDE}
                 alt=""
               />
             </div>
@@ -78,7 +80,7 @@ function Featured() {
             <div className="card w-full h-full hover:scale-[98%] rounded-xl transition-all overflow-hidden">
               <img
                 className="w-full h-full bg-cover"
-                src="src\assets\09ce62e5-4f11-4b65-b1f6-6e2714f1849d.jpg"
+                src={VISE}
                 alt=""
               />
             </div>

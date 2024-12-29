@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
 import Card from './Card';
+import logo from '../assets/logo.svg';
+import logo002 from '../assets/logo002.svg';
+import logo003 from '../assets/logo003.png';
 
 const CardHolder = () => {
     const [swidth, setSwidth] = useState(window.innerWidth);
   const cardsData = [
     {
-      logo: 'src/assets/logo.svg',
+      logo: logo,
       title: '',
       subtitle: '©2019–2022',
       width: (swidth<700)?'100%':'50%', // This will be managed via Tailwind on responsive breakpoints
       bgColor: '#004d43',
     },
     {
-      logo: 'src/assets/logo002.svg',
+      logo: logo002,
       title: '',
       subtitle: 'Rating 5.0 on Clutch',
       width: (swidth<700)?'100%':'25%',
       bgColor: '#222',
     },
     {
-      logo: 'src/assets/logo003.png',
+      logo: logo003,
       title: '',
       subtitle: 'Business Bootcamp Alumni',
       width: (swidth<700)?'100%':'25%', 
